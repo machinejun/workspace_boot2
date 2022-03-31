@@ -1,0 +1,4 @@
+DBTYPE=ORACLE
+(key)  (value)
+
+ 

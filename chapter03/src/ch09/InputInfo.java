@@ -17,11 +17,11 @@ public class InputInfo implements InputBookInfo{
 		System.out.println("----------------------------");
 		System.out.println("책 정보를 입력하세요");
 		System.out.print(" 책 이름 : ");
-		name = sc.next();
+		name = removeblank(sc.next());
 		System.out.print(" 출판사 : ");
-		publisher = sc.next();
+		publisher = removeblank(sc.next());
 		System.out.print(" 저자 : ");
-		author = sc.next();
+		author = removeblank(sc.next());
 		System.out.println("------------------------------");
 		book = new BookInfo(name, publisher, author);
 		return book;
@@ -33,7 +33,7 @@ public class InputInfo implements InputBookInfo{
 		String name = null;
 		System.out.println("------------------------");
 		System.out.print("책 제목 : ");
-		name = sc.next();
+		name = removeblank(sc.next());
 		return name;
 	}
 	
@@ -44,14 +44,22 @@ public class InputInfo implements InputBookInfo{
 		System.out.println("----------------------------");
 		System.out.println("수정하실 책 정보를 입력하세요");
 		System.out.print(" 책 이름 : ");
-		name = sc.next();
+		name = removeblank(sc.next());
 		System.out.print(" 출판사 : ");
-		publisher = sc.next();
+		publisher = removeblank(sc.next());
 		System.out.print(" 저자 : ");
-		author = sc.next();
+		author = removeblank(sc.next());
 		System.out.println("------------------------------");
 		book = new BookInfo(name, publisher, author);
 		return book;
+	}
+	
+	private static String removeblank(String str) {
+		String str2 = "";
+		for(String string : str.split(" ")) {
+			str2 += string;
+		}
+		return str2;
 	}
 	
 
