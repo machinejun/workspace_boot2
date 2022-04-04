@@ -1,0 +1,15 @@
+Git Branch
+
+1. git reset > 
+
+: 브랜치(branch 만듬)
+1. git branch 브랜치_이름
+2. git checkout 브랜치_이름  < 브랜치 이동
+// git branch에서 커밋한 것은 메인으로 돌아오면 없음
+3. git checkout main < 메인 branch로 돌아온다.
+4. git merge 합칠_브랜치_이름 
+5. 합쳐진다.
+
+
+6. git
+
