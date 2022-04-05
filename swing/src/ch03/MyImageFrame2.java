@@ -69,7 +69,7 @@ public class MyImageFrame2 extends JFrame{
 			super.paintComponent(g);
 			
 			g.drawImage(backGroundImage, 0, 0, backGroundSize[0], backGroundSize[1], null);
-			g.drawImage(imageIcon, iconLoaction[0], iconLoaction[1], iconSize[0], iconSize[1], null);
+
 		}
 		
 		public void setIconLocation() {
@@ -86,6 +86,6 @@ public class MyImageFrame2 extends JFrame{
 		}
 	}// end of inner class
 	public void addEventListener() {
-		System.out.println("브랜치를 ㅁ만들었습니다.");
+		System.out.println("브랜치를 만들었습니다.");
 	}
 }// end of outer class

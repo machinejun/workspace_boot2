@@ -65,7 +65,7 @@ public class LottoFrame2 extends JFrame{
 			
 			int xPosition = 50;
 			Graphics2D g2d = (Graphics2D)g;
-			
+			// grahics2d : grahics를 상속받은 클래스이며 좀 더 정교한 표현이 가능하게 만든 클래스이며 기하적 그림, 좌표 이동, 생상관리 등이 가능하다.
 			for(int i = 0; i < lotto.length; i++) {
 				g.drawString(Integer.toString(lotto[i]), xPosition, 200);
 				xPosition += 100;
