@@ -72,17 +72,17 @@ public class MyMiniGame extends JFrame{
 	
 	private void addEventListener() {
 		button.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				
 				stop = false;
-				requestFocusInWindow();
 				JButton selectButton = (JButton)e.getSource();
 				if(selectButton.getText().equalsIgnoreCase("동작")){
-		
+					stop = false;
+					
+				}else if(selectButton.getText().equalsIgnoreCase("멈춤")) {
+					stop = true;
 				}
-				
+
 			}
 		});
 		addKeyListener(new KeyAdapter() {
