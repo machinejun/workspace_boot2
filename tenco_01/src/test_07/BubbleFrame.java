@@ -24,9 +24,9 @@ public class BubbleFrame extends JFrame {
 		backgroundMap = new JLabel(new ImageIcon("images/backgroundMap.png"));
 		setContentPane(backgroundMap);
 		player = new Player();
-		bubble = new Bubble(player);
+		
 		add(player);
-		add(bubble);
+		
 	}
 
 	private void initSetting() {
@@ -67,7 +67,10 @@ public class BubbleFrame extends JFrame {
 					break;
 				case KeyEvent.VK_SPACE:
 					System.out.println("space");
-					bubble.shotBubbleL();
+					bubble = new Bubble();
+					add(bubble);
+					bubble.shotBubbleL(player);
+
 					break;
 				default:
 				}
