@@ -14,7 +14,7 @@ class BankAccount {
 	// deposit 기능
 	public synchronized void deposit(int money) {
 		// synchronized : 키워드를 붙이게 되면 이 메서드가 먼저 공유자원에 접근하면 뒤에
-				// 				  접근하는 객체를 대기 상태로 만든다.
+		// 				  접근하는 객체를 대기 상태로 만든다.
 		// 기본값 10만원
 		int currentMoney = getMoney();
 		try {
