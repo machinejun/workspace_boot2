@@ -16,8 +16,5 @@ public class WrapperClass2 {
 		} catch (NumberFormatException e) {
 			System.out.println("type변환 오류");
 		}
-		
-	
-		
 	}  
 }
