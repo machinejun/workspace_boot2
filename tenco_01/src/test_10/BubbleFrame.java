@@ -40,7 +40,7 @@ public class BubbleFrame extends JFrame {
 	}
 
 	private void initSetting() {
-		setSize(300, 600);
+		setSize(1000, 640);
 		setLayout(null);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -100,7 +100,7 @@ public class BubbleFrame extends JFrame {
 					player.setDown(false);
 					break;
 				case KeyEvent.VK_0:
-					imgUrl = "Map.png"
+					//imgUrl = "Map.png"
 				default:
 					break;
 				}
