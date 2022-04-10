@@ -31,7 +31,6 @@ public class BackGroundPlayerService implements Runnable {
 	@Override
 	public void run() {
 		while (true) { 
-			System.out.println(player.getY());
 			if (player.getY() <= 50 && BackgroundPanel.stageNum == 1) {
 				BackgroundPanel.stageNum = 2;
 				backgroundPanel.stageChage();
