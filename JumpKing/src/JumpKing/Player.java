@@ -6,9 +6,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.xml.crypto.Data;
 
-import org.graalvm.compiler.core.common.util.Util;
-import org.jcp.xml.dsig.internal.dom.Utils;
-
 public class Player extends JLabel implements Moveable {
 	// 위치 상태
 	private int X;
@@ -31,8 +28,8 @@ public class Player extends JLabel implements Moveable {
 	private boolean rightWallCrash;
 
 	// 플레이어 속도 상태
-	private final int SPEED = 2;
-	private final int JUMPSPEED = 3;
+	private final int SPEED = 1;
+	private final int JUMPSPEED = 4;
 
 	// Back_service로 주기위해 생성하는데 OOP의 개념에선 좀 안맞는다.
 	private BackgroundPanel backgroundPanel;
@@ -166,7 +163,7 @@ public class Player extends JLabel implements Moveable {
 			@Override
 			public void run() {
 				for (int i = 0; i < 141; i++) {
-					X = X + SPEED;
+					X = X + (SPEED);
 					if (i < 21) {
 						Y = Y - JUMPSPEED;
 					} else if (i < 41) {

@@ -1,0 +1,6 @@
+Java 주소값 크기 : 4byte
+
+ex
+int a;
+boolean b;
+String name ;   >>> 어떤 정보가 담길지 모르기 때문에 heap 메모리에 주소값으로 담김
