@@ -1,0 +1,12 @@
+service Start(2022.04.27)
+------------------
+Admission/clinet1
+Admission/client2
+Message/clinet1>clinet1@hello
+Message/client2>clinet1@clientsdfsd
+CreateRoom/sdfsd@clinet1
+EnterRoom/sdfsd@client2
+Chatting/sdfsd>clinet1@sdfsdf
+Chatting/sdfsd>client2@sdfsdf
+ExitRoom/sdfsd@client2
+ExitRoom/sdfsd@clinet1

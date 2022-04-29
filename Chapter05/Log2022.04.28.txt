@@ -1,0 +1,13 @@
+service Start(2022.04.28)
+------------------
+Admission/손님
+Admission/손님
+Message/손님*>손님@ㄴㄴㄹㅇ
+CreateRoom/ㅁㄴㅇㅇ@손님
+EnterRoom/ㅁㄴㅇㅇ@손님*
+Chatting/ㅁㄴㅇㅇ>손님@ㅁㄴㅇ
+Chatting/ㅁㄴㅇㅇ>손님*@ㅁㄴㅇ
+Message/손님>손님@ㅁㄴㅇ
+Disconnect/손님
+Disconnect/손님*
+Admission/write user NickName

@@ -1,0 +1,14 @@
+Socket 통신 = state full 통신
+-> Http와 다르게 인증이 필요 없다 >> 서버는 누군지 알수 있다.
+
+
+소켓 통신 => 1byte -> 8bit = 256글자   ==> byteStream
+
+intputStream( 단점: 영어는 ok but 한글은 x // 한글은 1바이트에 표현하지 못함 )
+->>> inputStreamReader ( 단점 : 배열단위로 주고 받기 때문에 공간이 지정되어져 있다)
+->>> BufferedReader ( 가변 배열 // 얘는 가변 배열이기 때문에 + \n + flush()를 사용하지 않으면 끝을 모르기 때문에 계속 받고 있는중)
+
+Server라는 클래스에 List로 스트림을 집어 넣어도 ㄱㅊ았다.
+>>> 하지만 각자 쓰레드가 돌아가야 하기 때문에
+>>> OOP 개념을 활용해서 >> user 만듬
+>>> 
