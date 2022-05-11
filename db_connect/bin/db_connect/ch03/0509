@@ -1,0 +1,11 @@
+preparedStatement 사용방법
+
+Statement와 preparedStatement의 차이점은 캐시 사용 유무 입니다.
+따라서 반복적으로 쿼리를 수행한다면 Statement에 비해 성능이 훨씬 좋다
+그리고 보안적인 측면에서도 statement보다 preparedStatement 안정성이 높다.
+
+
+사용자 ---> 바나나 ---> (램) ----> 하드디스크(서치)
+
+- 메모리에 올라감
+사용자 ---> 바나나 ---> (램)

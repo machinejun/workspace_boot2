@@ -6,7 +6,8 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/gson-2.8.5.jar"/>
-	<classpathentry kind="lib" path="lib/lombok.jar"/>
+	<classpathentry kind="lib" path="C:/junil/project/JUMP_KING/JUMP_KING/Test/lombok/lombok.jar"/>
+	<classpathentry kind="lib" path="/db_connect/gson/gson-2.8.5.jar"/>
+	<classpathentry kind="lib" path="/db_connect/gson/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
